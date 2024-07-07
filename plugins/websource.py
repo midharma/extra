@@ -52,7 +52,7 @@ def web_download(client, message):
 
 
 __MODULE__ = "Web"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 **command:**
 
 • /webdl - **download website source code.**
@@ -65,5 +65,5 @@ __HELP__ = """<blockquote><b>
 **note:**
 
 - this command can be used to download website source code.
-- the source code will be saved as a document and sent as a document to the chat.</b></blockquote>
+- the source code will be saved as a document and sent as a document to the chat.</b>
 """
