@@ -38,7 +38,7 @@ async def wall(_, message: Message):
         )
 
 __MODULE__ = "Wall"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 **COMMANDS:**
 
 • /WALL - **download and send wallpaper.**
@@ -50,5 +50,5 @@ __HELP__ = """<blockquote><b>
 
 **NOTE:**
 
-- this command can be used to download and send wallpaper.</b></blockquote>
+- this command can be used to download and send wallpaper.</b>
 """
