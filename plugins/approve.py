@@ -219,5 +219,5 @@ when you send /autoapprove in your group you see turn on button if auttoprove no
 
 ¤ Manual - a message will be send to the chat by tagging the admins. the admins can accept or decline the requests.
 
-Use: /clearpending command to remove all pending user id from db. this will allow the user to send request again.</b></blockquote>
+Use: /clearpending command to remove all pending user id from db. this will allow the user to send request again.</b>
 """
