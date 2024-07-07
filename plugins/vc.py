@@ -110,7 +110,7 @@ async def vcmembers(client, message: Message):
 
 
 __MODULE__ = "VcTool"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 **COMMANDS:**
 
 • /vcstart - **starts a new voice chat.**
@@ -123,5 +123,5 @@ __HELP__ = """<blockquote><b>
 
 **NOTE:**
 
-- this assistant must be an administrator of the chat to use the voice chat commands.</b></blockquote>
+- this assistant must be an administrator of the chat to use the voice chat commands.</b>
 """
