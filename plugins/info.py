@@ -140,9 +140,9 @@ async def chat_info_func(_, message: Message):
 
 
 __MODULE__ = "Info"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 **user & chat information:**
 
 • `/info`: Get information about the user. Username, ID, and more.
 • `/chatinfo [username|id]`: Get information about the chat. member count, is verified, invite link, and more.
-</b></blockquote>"""
+</b>"""
