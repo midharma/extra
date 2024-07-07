@@ -51,7 +51,7 @@ async def get_link_group(client, message):
     except Exception:
         pass
 
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 **telegraph upload bot commands**
 
 use these commands to upload media to telegraph:
@@ -65,7 +65,7 @@ use these commands to upload media to telegraph:
 - reply to a photo or video with `/tgm` to upload it.
 
 **note:**
-you must reply to a media file for the upload to work.</b></blockquote>
+you must reply to a media file for the upload to work.</b>
 """
 
 __MODULE__ = "Link"
