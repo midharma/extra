@@ -48,7 +48,7 @@ async def get_thumbnail_command(client, message):
         await a.edit(f"an errorr ocurred: {e}")
 
 
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 **youtube thumbnail bot commands**
 
 use these commands to get the thumbnail from a youtube video:
@@ -62,7 +62,7 @@ use these commands to get the thumbnail from a youtube video:
 - `/getthumb `
 
 **note:**
-provide a valid youtube url after the command to get the thumbnail.</b></blockquote>
+provide a valid youtube url after the command to get the thumbnail.</b>
 """
 
 __MODULE__ = "Yt"
