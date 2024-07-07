@@ -22,8 +22,8 @@ async def hastag(bot, message):
 
 
 __MODULE__ = "Hastag"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 **hashtag generator:**
 
 • `/hashtag [text]`: Generate hashtags for the given text.
-</b></blockquote>"""
+</b>"""
