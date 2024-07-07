@@ -304,7 +304,7 @@ async def msg_quotly_cmd(self: app, ctx: Message):
         return await ctx.reply_text(f"ERROR: {e}")
 
 
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 **quote generation bot commands**
 
 use these commands to create quotes from messages:
@@ -319,6 +319,6 @@ use these commands to create quotes from messages:
 
 **note:**
 make sure to reply to a message for the quote command to work.
-</b></blockquote>"""
+</b>"""
 
 __MODULE__ = "Qoute"
