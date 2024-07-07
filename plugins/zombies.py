@@ -88,7 +88,7 @@ async def remove(client, message):
         await asyncio.sleep(e.value)
 
 __MODULE__ = "Zombies"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 **commands:**
 - /zombies: remove deleted accounts from the group.
 
@@ -99,4 +99,4 @@ __HELP__ = """<blockquote><b>
 - permissions needed: can restrict members
 
 **note:**
-- use directly in a group chat with me for best effect. only admins can execute this command.</b></blockquote>"""
+- use directly in a group chat with me for best effect. only admins can execute this command.</b>"""
