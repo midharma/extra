@@ -32,7 +32,7 @@ from config import adminlist, BANNED_USERS
 warnsdb = mongodb.warns
 
 __MODULE__ = "Ban"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 /ban - Ban A User
 /sban - Delete all messages of user that sended in group and ban the user
 /tban - Ban A User For Specific Time
@@ -57,7 +57,7 @@ __HELP__ = """<blockquote><b>
 /unmute - Unmute A User
 /zombies - Ban Deleted Accounts
 /report | @admins | @admin - Report A Message To Admins.
-/link - Send in Group/SuperGroup Invite Link.</b></blockquote>"""
+/link - Send in Group/SuperGroup Invite Link.</b>"""
 
 async def int_to_alpha(user_id: int) -> str:
     alphabet = list(ascii_lowercase)[:10]
