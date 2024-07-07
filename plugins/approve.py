@@ -206,7 +206,7 @@ async def manual(app, cb):
 
 
 __MODULE__ = "Approve"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<b>
 command: /autoapprove
 
 This module helps to automatically accept chat ioin request send by a user through invitation link of your group
