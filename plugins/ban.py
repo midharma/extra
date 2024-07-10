@@ -56,7 +56,7 @@ __HELP__ = """<b>
 /tmute - Mute A User For Specific Time
 /unmute - Unmute A User
 /zombies - Ban Deleted Accounts
-/report | @admins | @admin - Report A Message To Admins.
+/report | @report - Report A Message To Admins.
 /link - Send in Group/SuperGroup Invite Link.</b>"""
 
 async def int_to_alpha(user_id: int) -> str:
