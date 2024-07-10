@@ -352,7 +352,7 @@ async def deleteFunc(_, message: Message):
 
 
 
-@app.on_message(filters.command("demote") & ~filters.private & ~BANNED_USERS)
+@app.on_message(filters.command("unadmin") & ~filters.private & ~BANNED_USERS)
 @adminsOnly("can_promote_members")
 async def demote(_, message: Message):
     user_id = await extract_user(message)
