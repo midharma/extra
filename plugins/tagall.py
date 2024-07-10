@@ -179,7 +179,7 @@ async def tag_all_admins(_, message):
             pass
 
 @app.on_message(
-    filters.command(["admin", "admins","report"], prefixes=["/", "@"]) & filters.group
+    filters.command(["report"], prefixes=["/", "@"]) & filters.group
 )
 async def admintag_with_reporting(client, message):
     if not message.from_user:
