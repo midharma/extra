@@ -46,9 +46,9 @@ __HELP__ = """<b>
 /purge - Purge Messages
 /purge [n] - Purge "n" number of messages from replied message
 /del - Delete Replied Message
-/promote - Promote A Member
-/fullpromote - Promote A Member With All Rights
-/demote - Demote A Member
+/admin - Promote A Member
+/fulladmin - Promote A Member With All Rights
+/unadmin - Demote A Member
 /pin - Pin A Message
 /unpin - unpin a message 
 /unpinall - unpinall messages 
@@ -242,7 +242,7 @@ async def unban_func(_, message: Message):
  # Promote Members
 
 
-@app.on_message(filters.command(["promote", "fullpromote"]) & ~filters.private & ~BANNED_USERS)
+@app.on_message(filters.command(["admin", "fulladmin"]) & ~filters.private & ~BANNED_USERS)
 @adminsOnly("can_promote_members")
 async def promoteFunc(_, message: Message):
     user_id = await extract_user(message)
