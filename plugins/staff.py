@@ -5,6 +5,7 @@ from pyrogram.types import Message
 from pyrogram import enums
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import FloodWait
+from DanteMusic import app
 
 @app.on_message(filters.command("staff") & ~filters.private)
 async def admins(client, message):
