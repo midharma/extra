@@ -55,6 +55,7 @@ __HELP__ = """<b>
 /mute - Mute A User
 /tmute - Mute A User For Specific Time
 /unmute - Unmute A User
+/staff - Show admin group
 /zombies - Ban Deleted Accounts
 /report | @report - Report A Message To Admins.
 /link - Send in Group/SuperGroup Invite Link.</b>"""
