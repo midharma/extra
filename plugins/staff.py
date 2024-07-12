@@ -1,4 +1,5 @@
-@app.on_message(filters.command(["admins","staff"]))
+@app.on_message(filters.command("setgoodbye") & ~filters.private)
+@adminsOnly("can_change_info")
 async def admins(client, message):
   try: 
     adminList = []
