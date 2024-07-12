@@ -1,5 +1,12 @@
-@app.on_message(filters.command("setgoodbye") & ~filters.private)
-@adminsOnly("can_change_info")
+import os
+import asyncio
+from pyrogram import Client, filters
+from pyrogram.types import Message
+from pyrogram import enums
+from pyrogram.enums import ChatMemberStatus
+from pyrogram.errors import FloodWait
+
+@app.on_message(filters.command("staff") & ~filters.private)
 async def admins(client, message):
   try: 
     adminList = []
