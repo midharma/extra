@@ -52,10 +52,10 @@ async def handle_left_member(member, chat):
 
 @app.on_message(filters.left_chat_member & filters.group, group=6)
 @capture_err
-async def goodbye(_, m:Message):
+async def goodbye(_, message):
 
-    member = await app.get_users(m.from_user.id)
-    chat = m.chat
+    member = await app.get_users(message.from_user.id)
+    chat = message.chat
     return await handle_left_member(member, chat)
 
 
