@@ -2549,8 +2549,8 @@ async def style(c, m):
         pass
 
 
-__HELP__ = """<b>
+__HELP__ = """<blockquote><b>
 • /font [text] - converts simᴩle text to beautiful text by changing it's font.
-</b>"""
+</b></blockquote>"""
 
 __MODULE__ = "Font"

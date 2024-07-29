@@ -47,6 +47,6 @@ async def fkadress(_, message):
 
 
 __MODULE__ = "Fake"
-__HELP__ = """<b>
+__HELP__ = """<blockquote><b>
 
-/fake [country name ] - to get random address</b>"""
+/fake [country name ] - to get random address</b></blockquote>"""

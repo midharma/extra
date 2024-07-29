@@ -23,7 +23,7 @@ async def write(client, message):
         await nan.edit(e)
 
 __MODULE__ = "Write"
-__HELP__ = """<b>
+__HELP__ = """<blockquote><b>
 **COMMANDS**:
 - /write: write text on an cloud and get an edited photo.
 
@@ -34,4 +34,4 @@ __HELP__ = """<b>
 - permissions needed: none
 
 **NOTE**:
-- use directly in a group chat with me for the best results.</b>"""
+- use directly in a group chat with me for the best results.</b></blockquote>"""

@@ -1,9 +1,7 @@
 from io import BytesIO
-
 from httpx import AsyncClient, Timeout
 from pyrogram import filters
 from pyrogram.types import Message
-
 from DanteMusic import app
 
 fetch = AsyncClient(
@@ -304,7 +302,7 @@ async def msg_quotly_cmd(self: app, ctx: Message):
         return await ctx.reply_text(f"ERROR: {e}")
 
 
-__HELP__ = """<b>
+__HELP__ = """<blockquote><b>
 **quote generation bot commands**
 
 use these commands to create quotes from messages:
@@ -319,6 +317,6 @@ use these commands to create quotes from messages:
 
 **note:**
 make sure to reply to a message for the quote command to work.
-</b>"""
+</b></blockquote>"""
 
 __MODULE__ = "Qoute"

@@ -53,8 +53,8 @@ async def figlet_handler(Client, query: CallbackQuery):
         return await query.answer(e, show_alert=True)
 
 __MODULE__ = "Figlet"
-__HELP__ = """<b>
+__HELP__ = """<blockquote><b>
 **figlet**
 
-• /figlet <text> - creates a figlet of the given text.</b>
+• /figlet <text> - creates a figlet of the given text.</b></blockquote>
 """

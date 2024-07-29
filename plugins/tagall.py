@@ -179,7 +179,7 @@ async def tag_all_admins(_, message):
             pass
 
 @app.on_message(
-    filters.command(["report"], prefixes=["/", "@"]) & filters.group
+    filters.command(["admin", "admins","report"], prefixes=["/", "@"]) & filters.group
 )
 async def admintag_with_reporting(client, message):
     if not message.from_user:
@@ -254,7 +254,7 @@ async def cancelcmd(_, message):
         await message.reply_text("**no process ongoing!**")
         return
 __MODULE__ = "Tagall"
-__HELP__ = """<b>
+__HELP__ = """<blockquote><b>
 
 @all or /all | /tagall or  @tagall | /mentionall or  @mentionall [text] or [reply to any message] to tag all user's in your group bt bot
 
@@ -263,5 +263,5 @@ __HELP__ = """<b>
 
 /cancel Or @cancel |  /offmention Or @offmention | /mentionoff Or @mentionoff | /cancelall Or @cancelall - to stop running any tag process
 
-**__Note__** This command can only use the Admins of Chat and make Sure Bot and assistant is an admin in your group's</b>
+**__Note__** This command can only use the Admins of Chat and make Sure Bot and assistant is an admin in your group's</b></blockquote>
 """
