@@ -1,4 +1,4 @@
-# dante
+# Usu
 from UsuMusic.core.mongo import mongodb
 
 greetingsdb = mongodb.greetings
