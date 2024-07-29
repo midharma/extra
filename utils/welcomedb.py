@@ -1,5 +1,5 @@
 # dante
-from DanteMusic.core.mongo import mongodb
+from UsuMusic.core.mongo import mongodb
 
 greetingsdb = mongodb.greetings
 
