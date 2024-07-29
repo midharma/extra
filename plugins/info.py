@@ -3,10 +3,10 @@ import os
 from pyrogram import enums, filters
 from pyrogram.types import Message
 
-from DanteMusic import app
-from DanteMusic.misc import SUDOERS
-from DanteMusic.utils.database import is_gbanned_user
-from DanteMusic.utils.sections import section
+from UsuMusic import app
+from UsuMusic.misc import SUDOERS
+from UsuMusic.utils.database import is_gbanned_user
+from UsuMusic.utils.sections import section
 
 
 async def userstatus(user_id):
