@@ -8,18 +8,18 @@ from pyrogram.types import (
 )
 
 from typing import Dict, List, Union
-from DanteMusic import app
-from DanteMusic.core.mongo import mongodb
+from UsuMusic import app
+from UsuMusic.core.mongo import mongodb
 from utils.error import capture_err
-from DanteMusic.utils.permissions import adminsOnly, member_permissions
-from DanteMusic.utils.keyboard import ikb
+from UsuMusic.utils.permissions import adminsOnly, member_permissions
+from UsuMusic.utils.keyboard import ikb
 from .notes import extract_urls
-from DanteMusic.utils.functions import (
+from UsuMusic.utils.functions import (
     check_format,
     extract_text_and_keyb,
     get_data_and_name,
 )
-from DanteMusic.utils.database import (
+from UsuMusic.utils.database import (
     delete_filter,
     deleteall_filters,
     get_filter,
