@@ -115,6 +115,9 @@ async def remove_warns(chat_id: int, name: str) -> bool:
         return True
     return False
 
+@app.on_message(
+    filters.command(["staff"]) & filters.group
+)
 async def staff_cmd(client, message):
     chat_title = message.chat.title
     creator = []
