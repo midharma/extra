@@ -118,7 +118,7 @@ async def remove_warns(chat_id: int, name: str) -> bool:
 @app.on_message(
     filters.command(["staff"]) & filters.group
 )
-async def staff_cmd(client, message):
+async def staff_cmd(_, message: Message):
     chat_title = message.chat.title
     creator = []
     co_founder = []
