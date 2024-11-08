@@ -22,7 +22,7 @@ async def tag_all_users(_, message):
     replied = message.reply_to_message
     if len(message.command) < 2 and not replied:
         await message.reply_text(
-            "** give some text to tag all, like »** `@all Hi Friends`"
+            "** give some text to tag all, like »** `/tagall Hi Friends`"
         )
         return
     if replied:
@@ -256,7 +256,7 @@ async def cancelcmd(_, message):
 __MODULE__ = "Tagall"
 __HELP__ = """<blockquote><b>
 
-@all or /all | /tagall or  @tagall | /mentionall or  @mentionall [text] or [reply to any message] to tag all user's in your group bt bot
+/tagall or  @tagall | /mentionall or  @mentionall [text] or [reply to any message] to tag all user's in your group bt bot
 
 /admins | @admins | /report [text] or [reply to any message] to tag all admin's in your group
 
