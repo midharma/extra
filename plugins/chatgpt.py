@@ -2,9 +2,9 @@ from config import BANNED_USERS
 from pyrogram import filters
 from pyrogram.enums import ChatAction
 from UsuMusic import app
-import TheApi
+import TheApix
 
-usu = TheApi.Client()
+usu = TheApix.Client()
 
 
 @app.on_message(filters.command(["chatgpt", "ai", "ask"]) & ~BANNED_USERS)
@@ -21,7 +21,7 @@ async def chatgpt_chat(bot, message):
         user_input = " ".join(message.command[1:])
 
     await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
-    results = await usu.ask(user_input)
+    results = await usu.chatgpt(user_input)
     await message.reply_text(results)
 
 
