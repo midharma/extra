@@ -1,3 +1,8 @@
+from config import BANNED_USERS
+from pyrogram import filters
+from pyrogram.enums import ChatAction
+from UsuMusic import app
+
 @app.on_message(filters.command(["chatgpt", "ai", "ask"]) & ~BANNED_USERS)
 async def chatgpt_chat(bot, message):
     if len(message.command) < 2 and not message.reply_to_message:
