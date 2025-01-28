@@ -26,6 +26,5 @@ async def chatgpt_chat(bot, message):
 
 
 __MODULE__ = "ChatGpt"
-__HELP__ = """
+__HELP__ = 
 /ai or /ask [Query] - Berikan pertanyaan"""
-"""
