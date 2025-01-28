@@ -1,4 +1,4 @@
-from config import BANNED_USERS
+"""from config import BANNED_USERS
 from pyrogram import filters
 from pyrogram.enums import ChatAction
 from UsuMusic import app
@@ -28,3 +28,4 @@ async def chatgpt_chat(bot, message):
 __MODULE__ = "ChatGpt"
 __HELP__ = """
 /ai or /ask [Query] - Berikan pertanyaan"""
+"""
