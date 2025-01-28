@@ -2,7 +2,7 @@ from config import BANNED_USERS
 from pyrogram import filters
 from pyrogram.enums import ChatAction
 from UsuMusic import app
-import TheApi
+from theapix import TheApi
 
 
 api = TheApi()
@@ -23,7 +23,7 @@ async def chatgpt_chat(bot, message):
         user_input = " ".join(message.command[1:])
 
     await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
-    results = TheApi.chatgpt(user_input)
+    results = api.chatgpt(user_input)
     await message.reply_text(results)
 
 
