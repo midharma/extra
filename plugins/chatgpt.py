@@ -2,7 +2,7 @@ from config import BANNED_USERS
 from pyrogram import filters
 from pyrogram.enums import ChatAction
 from UsuMusic import app
-import theapix
+from theapix import TheApi
 
 usu = theapix.TheApi()
 
