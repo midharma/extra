@@ -2,10 +2,9 @@ from config import BANNED_USERS
 from pyrogram import filters
 from pyrogram.enums import ChatAction
 from UsuMusic import app
-import TheApix
+from TheApi import Client
 
-
-api = TheApi()
+TheApi = Client()
 
 
 
