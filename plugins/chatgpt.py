@@ -4,6 +4,7 @@ from pyrogram.enums import ChatAction
 from UsuMusic import app
 from TheApi import Client
 
+
 TheApi = Client()
 
 
@@ -22,7 +23,7 @@ async def chatgpt_chat(bot, message):
         user_input = " ".join(message.command[1:])
 
     await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
-    results = await utils.TheApi.chatgpt(user_input)
+    results = TheApi.chatgpt(user_input)
     await message.reply_text(results)
 
 
