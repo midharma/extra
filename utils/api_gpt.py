@@ -1,3 +1,3 @@
-from TheApi import Client
+import TheApi
 
-TheApi = Client()
+usu = TheApi.Client()
