@@ -5,7 +5,6 @@ from UsuMusic import app
 from TheApi import Client
 
 TheApi = Client()
-usu = TheApi
 
 
 @app.on_message(filters.command(["chatgpt", "ai", "ask"]) & ~BANNED_USERS)
@@ -22,7 +21,7 @@ async def chatgpt_chat(bot, message):
         user_input = " ".join(message.command[1:])
 
     await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
-    results = await usu.chatgpt(user_input)
+    results = await TheApi.chatgpt(user_input)
     await message.reply_text(results)
 
 
