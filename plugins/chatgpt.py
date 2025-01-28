@@ -2,9 +2,9 @@ from config import BANNED_USERS
 from pyrogram import filters
 from pyrogram.enums import ChatAction
 from UsuMusic import app
-from theapix import TheApi
+import TheApi
 
-usu = theapix.TheApi()
+usu = TheApi()
 
 
 @app.on_message(filters.command(["chatgpt", "ai", "ask"]) & ~BANNED_USERS)
