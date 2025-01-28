@@ -11,4 +11,7 @@ uuid
 pytz
 pyfiglet
 telegraph
-MukeshAPI
+filetype # Replacement of imghdr
+TheApix
+pyfiglet
+
