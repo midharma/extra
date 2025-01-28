@@ -12,6 +12,6 @@ pytz
 pyfiglet
 telegraph
 filetype # Replacement of imghdr
-TheApix
+theapix
 pyfiglet
 
